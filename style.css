@@ -1,0 +1,82 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+    /* LAYOUT
+    /*******************************************/
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+/******************************************
+    /* ADDITIONAL STYLES
+    /*******************************************/
+body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-size: cover;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-image: url('./dance.gif');
+  animation-name: list;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  color: Maroo;
+  /* height: 100vh; */
+  padding: 0;
+  margin: 0;
+  background-attachment: scroll;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: xx-large;
+}
+
+img {
+  width: 400px;
+}
+
+@media all and (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+}
+button {
+  background: darkgray;
+  cursor: pointer;
+}
+@keyframes list {
+  0% {
+    background-image: url('./dance.gif');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  25% {
+    background-image: url('./schwift.gif');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  50% {
+    background-image: url('./mr.gif');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url('./yeah.gif');
+    background-attachment: scroll;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
